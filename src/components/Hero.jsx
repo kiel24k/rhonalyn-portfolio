@@ -77,7 +77,7 @@ export default function Hero() {
               alt={`Portrait of ${profile.name}`}
               width="640"
               height="961"
-              className="relative w-56 rounded-[2rem] border-4 border-card object-cover shadow-xl sm:w-64 md:w-80"
+              className="relative w-56 rounded-[2rem] border-4 border-card object-cover shadow-xl sm:w-64 md:w-80 dark:border-secondary"
             />
           </div>
         </div>

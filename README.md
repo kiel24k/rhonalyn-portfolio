@@ -2,6 +2,8 @@
 
 A responsive single-page portfolio built with **React (Vite)**, **Tailwind CSS v4**, and **shadcn-style UI components**. Frontend only — no backend required.
 
+Includes a light/dark mode switch (moon/sun button in the navbar). It follows the visitor's system theme until they pick one, then remembers the choice.
+
 ## Getting started
 
 ```bash
@@ -40,6 +42,7 @@ src/
 ├── components/
 │   ├── ui/                 # shadcn-style primitives (button, card, badge, separator)
 │   ├── Navbar.jsx          # sticky nav with mobile menu
+│   ├── ThemeToggle.jsx     # light/dark mode switch
 │   ├── Hero.jsx            # intro + photo
 │   ├── About.jsx           # summary + highlights
 │   ├── Experience.jsx      # work history timeline

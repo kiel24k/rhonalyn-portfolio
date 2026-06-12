@@ -33,7 +33,7 @@ export default function Experience() {
                 )}
               </span>
 
-              <Card className="transition-shadow hover:shadow-md">
+              <Card className="transition-all hover:shadow-md dark:hover:border-ring/40">
                 <CardHeader>
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <CardTitle as="h3" className="flex items-center gap-2 text-xl">

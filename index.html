@@ -17,7 +17,12 @@
     <title>Rhonalyn Sales | Portfolio</title>
     <script>
       ;(function () {
-        var stored = localStorage.getItem("theme")
+        var stored = null
+        try {
+          stored = localStorage.getItem("theme")
+        } catch (e) {
+          // storage blocked — fall back to the system preference below
+        }
         var dark =
           stored === "dark" ||
           (stored !== "light" &&
