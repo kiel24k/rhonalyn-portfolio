@@ -8,6 +8,7 @@ export const profile = {
   shortLocation: "Trece Martires City, Cavite",
   email: "rhonalynsales@gmail.com",
   phone: "09946141965",
+  resumeUrl: "/Rhonalyn-Sales-Resume.pdf",
   summary:
     "Motivated and detail-oriented professional with a solid background in office administration, computer systems, and customer service. Experienced and efficient in the use of Microsoft Office applications, including Excel and Word. Skilled in photo and video editing, project coordination, and team collaboration. Recognized for a strong work ethic, adaptability, reliability, and excellent communication skills. Committed to delivering high-quality results, supporting organizational goals, and continuously developing both personally and professionally.",
 }

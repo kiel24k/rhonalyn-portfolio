@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { FileText, Mail, MapPin, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -73,10 +73,21 @@ export default function Contact() {
           })}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 flex flex-wrap justify-center gap-3">
           <Button asChild href={`mailto:${profile.email}`} size="lg">
             <Mail />
             Send Me an Email
+          </Button>
+          <Button
+            asChild
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noopener"
+            variant="outline"
+            size="lg"
+          >
+            <FileText />
+            View My Resume
           </Button>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowRight, FileText, Mail, MapPin, Phone } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -35,7 +35,18 @@ export default function Hero() {
               Get in Touch
               <ArrowRight />
             </Button>
-            <Button asChild href="#experience" variant="outline" size="lg">
+            <Button
+              asChild
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noopener"
+              variant="outline"
+              size="lg"
+            >
+              <FileText />
+              View Resume
+            </Button>
+            <Button asChild href="#experience" variant="ghost" size="lg">
               View Experience
             </Button>
           </div>

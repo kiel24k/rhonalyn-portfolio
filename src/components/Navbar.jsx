@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/ThemeToggle"
+import { profile } from "@/data/resume"
 
 const links = [
   { label: "About", href: "#about" },
@@ -53,6 +54,16 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={profile.resumeUrl}
+                target="_blank"
+                rel="noopener"
+                className={linkClasses}
+              >
+                Resume
+              </a>
+            </li>
           </ul>
 
           <ThemeToggle />
@@ -93,6 +104,17 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noopener"
+              className={`block ${linkClasses} py-2.5`}
+              onClick={() => setOpen(false)}
+            >
+              Resume
+            </a>
+          </li>
           <li className="pt-2">
             <Button
               asChild
